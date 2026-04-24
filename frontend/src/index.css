@@ -1,0 +1,289 @@
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+.card.income {
+    background-color: #4CAF50;
+}
+
+.card.expense {
+    background-color: #f44336;
+}
+
+.card.balance {
+    background-color: #2196F3;
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+}
+
+.card p {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.transaction-form {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.transaction-form div {
+    margin-bottom: 15px;
+}
+
+.transaction-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.transaction-form input,
+.transaction-form select,
+.transaction-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.transaction-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.transaction-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transaction-list th,
+.transaction-list td {
+    padding: 10px;
+    text-align: left;
+}
+
+.chart-container {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.tabs button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Budget Section */
+.budget-section {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.budget-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.budget-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.category-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.budget-amount {
+    color: #666;
+}
+
+.progress-bar-container {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    transition: width 0.3s ease;
+    border-radius: 10px;
+}
+
+.budget-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.status.over {
+    color: #ff4444;
+    font-weight: bold;
+}
+
+.status.at {
+    color: #ffaa00;
+}
+
+.remaining {
+    color: #666;
+}
+
+.savings-section {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-goal-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.goal-card {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.goal-card.completed {
+    background-color: #e8f5e9;
+    border-color: #4CAF50;
+}
+
+.goal-card.failed {
+    background-color: #ffebee;
+    border-color: #ff4444;
+}
+
+.goal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.goal-header h3 {
+    margin: 0;
+}
+
+.delete-goal-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff4444;
+    font-size: 18px;
+}
+
+.goal-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.goal-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.add-progress-btn {
+    margin-top: 10px;
+    background-color: #2196F3;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.goal-form {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+
+.goal-form input,
+.goal-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.goal-notes {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+}
